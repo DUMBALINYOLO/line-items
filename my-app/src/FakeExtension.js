@@ -42,8 +42,10 @@ const Extension = props => {
             className='currency'
             type='number'
             readOnly={true}
-            
+            value={weight}
+            name='weight'
             ref={inputRef}
+            onChange={props.changeHandler(index)}
             />
           <div>
             <button type="button"
