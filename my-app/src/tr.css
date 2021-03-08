@@ -1,0 +1,247 @@
+
+flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency {
+  text-align: right;
+  word-break: break-word;
+}
+
+.invoice {
+	 max-width: 800px;
+	 margin: auto;
+	 border: 1px solid #ccc;
+	 padding: 40px;
+	 border-radius: 4px;
+	 background: #696969;
+}
+ .brand {
+	 margin-bottom: 40px;
+}
+ .brand .logo {
+	 display: inline-block;
+	 border-radius: 4px;
+}
+ .addresses {
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-between;
+	 text-align: left;
+}
+ .addresses .from, .addresses .to {
+	 padding: 20px;
+	 border-radius: 4px;
+	 width: 100%;
+	 max-width: 266.6666666667px;
+}
+ .addresses .from {
+	 display: block;
+	 font-style: normal;
+	 margin-right: 10px;
+	 background: #efefef;
+	 border: 1px solid #ccc;
+}
+ .addresses .to {
+	 display: block;
+	 margin-left: 10px;
+	 padding: 0;
+}
+ .addresses .to .value {
+	 text-align: right;
+}
+ .addresses .address {
+	 display: block;
+}
+ .valueTable {
+	 margin: 0 0 0 auto;
+	 border: 1px solid #ccc;
+	 border-radius: 4px;
+	 overflow: hidden;
+	 width: 100%;
+	 min-width: 266.6666666667px;
+	 max-width: 266.6666666667px;
+}
+ .valueTable > .row {
+	 display: grid;
+	 grid-template-columns: repeat(2, 1fr);
+	 border-bottom: 1px solid #ccc;
+}
+ .valueTable > .row:last-of-type {
+	 border-bottom: none;
+}
+ .valueTable > .row > div {
+	 padding: 10px;
+}
+ .valueTable > .row > .label {
+	 justify-content: flex-start;
+	 font-weight: bold;
+}
+ .totalContainer {
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-between;
+}
+ .pay {
+	 display: flex;
+	 justify-content: flex-end;
+	 padding: 20px 0 20px 20px;
+}
+ button.payNow {
+	 display: block;
+	 padding: 20px 40px;
+	 background: lightyellow;
+	 border-radius: 4px;
+	 border: 1px solid #444;
+}
+ .footer {
+	 display: flex;
+	 flex-flow: column wrap;
+	 justify-content: space-between;
+	 align-items: center;
+}
+ .footer .comments {
+	 padding: 20px;
+	 border-radius: 4px;
+}
+ .footer .comments h4, .footer .comments h5 {
+	 margin-top: 0;
+	 margin-bottom: 10px;
+}
+ .footer .comments {
+	 text-align: left;
+	 background: #eee;
+}
+ .footer .closing {
+	 padding-top: 20px;
+}
+
+.lineItems {
+	 margin-bottom: 80px;
+
+}
+ .lineItems .addItem {
+	 padding-top: 20px;
+}
+ .lineItems .addItem button {
+	 background: none;
+	 padding: 10px;
+	 border: 1px solid;
+	 color: darkgreen;
+	 border-radius: 4px;
+	 float: right;
+}
+ .lineItems .addItem button .addIcon {
+	 color: darkgreen;
+	 margin-right: 5px;
+}
+ .gridTable {
+	 margin: 0 auto;
+	 border: 1px solid #ccc;
+	 border-radius: 4px;
+	 overflow: hidden;
+	 display: grid;
+}
+ .gridTable > .row {
+	 display: grid;
+	 grid-template-columns: 1fr repeat(2, 5fr) 2fr repeat(2, 3fr) 2fr;
+	 border-bottom: 1px solid #ccc;
+}
+ .gridTable > .row:last-of-type {
+	 border-bottom: none;
+}
+ .gridTable > .row.header > div {
+	 text-align: center;
+	 font-weight: bold;
+	 background: #eee;
+}
+ .gridTable > .row.editable > div {
+	 padding: 10px;
+}
+ .gridTable > .row > div {
+	 padding: 10px;
+	 border-left: 1px solid #ccc;
+	 width: 100%;
+	 line-height: 20px;
+	 min-width: 20px;
+}
+ .gridTable > .row > div:first-of-type {
+	 padding: 10px 0;
+	 border-left: none;
+}
+ .gridTable > .row > div:last-of-type {
+	 padding: 10px 0;
+}
+ .gridTable > .row > div:first-of-type, .gridTable > .row > div:nth-child(4), .gridTable > .row > div:last-of-type {
+	 text-align: center;
+}
+ .gridTable > .row > div > .deleteItem {
+	 color: darkred;
+	 background: none;
+	 border: 0;
+	 padding: 0;
+	 cursor: pointer;
+}
+ .gridTable .currency > input[type=number] {
+	 max-width: 80px;
+}
+ .listDraggingOver {
+	 background: #ddd;
+	 background-image: repeating-linear-gradient(30deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 30px, transparent 0, transparent 60px);
+}
+ .listItemDragging {
+	 background: #f9fff9;
+	 border: 1px solid #ccc;
+}
+
+
+.lineItem {
+	 display: grid;
+	 grid-template-columns: 1fr repeat(2, 5fr) 2fr repeat(2, 3fr) 2fr;
+   background-color: #1B2631;
+}
+ .lineItem > div {
+	 padding: 10px;
+	 border-left: 1px solid #ccc;
+	 width: 100%;
+	 line-height: 20px;
+	 min-width: 20px;
+}
+ .lineItem > div:first-of-type {
+	 padding: 10px 0;
+	 border-left: none;
+}
+ .lineItem > div:last-of-type {
+	 padding: 10px 0;
+}
+ .lineItem > div:first-of-type, .lineItem > div:nth-child(4), .lineItem > div:last-of-type {
+	 text-align: center;
+}
+ .deleteItem {
+	 color: darkred;
+	 background: none;
+	 border: 0;
+	 padding: 0;
+	 cursor: pointer;
+}
+
+ input, input[type=number] {
+	 padding: 5px;
+	 border: 1px dotted #d1d1d1;
+	 border-radius: 4px;
+	 min-width: 40px;
+	 width: 100%;
+}
+ input[type=number] {
+	 text-align: center;
+}
+
+.requestItem {
+  color: blue;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
